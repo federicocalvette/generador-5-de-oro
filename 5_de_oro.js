@@ -10,8 +10,7 @@ $(() => {
     $('.container button').click(function () { //espera que se haga click en el botón
 
         for (i = 0; i < cantBolasASortear; i++) {
-            //Animaciones 
-            $('.ball' + i).addClass('addanimation');
+            $('.ball' + i).addClass('addanimation'); //Animaciones para las bolas
         };
         $('.container button').hide(500); //ocultar cuando se hace click
         $('.goodluck').delay(3000).fadeIn(1000); //Mostrar el mensaje de suerte!
