@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+html {
+	background: rgb(44, 44, 44);
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	text-shadow: 0 0 2px #000;
+	overflow: hidden;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -350px;
+	margin-top: -150px;
+	display: none;
+	border-radius: 25px;
+	font-family: 'Roboto Condensed';
+	width: 700px;
+	height: 300px;
+	background: radial-gradient(#204, rgb(0, 238, 255));
+	box-shadow: 0 0 20px 0px rgb(158, 252, 252);
+	animation: myb 20s ease infinite;
+	background-size: 400% 400%;
+}
+
+.otherstuff {
+	position: absolute;
+	bottom: -2px;
+	left: 10px;
+	width: 180px;
+	line-height: 50%;
+	height: 30px;
+	color: #444;
+	font-size: 20px;
+	text-decoration: none;
+	font-family: 'Roboto Condensed';
+	opacity: .25;
+}
+
+span {
+	position: relative;
+	top: -3px;
+	left: 5px;
+	color: #fff;
+}
+
+.otherstuff:hover {
+	color: #fff;
+	opacity: 1;
+	transition: color .2s linear, opacity .2s linear;
+}
+
+@keyframes myb {
+	0% {
+		background-position: 50% 50%;
+	}
+
+	20% {
+		background-position: 50% 30%;
+	}
+
+	40% {
+		background-position: 75% 50%;
+	}
+
+	60% {
+		background-position: 75% 30%;
+	}
+
+	80% {
+		background-position: 30% 60%;
+	}
+
+	100% {
+		background-position: 50% 50%;
+	}
+}
+
+h1 {
+	text-align: center;
+	font-size: 50px;
+	position: relative;
+	top: -15px;
+	color: white;
+	text-shadow: 2px 2px 2px #000;
+}
+
+
+h1:after {
+	/* styled underlining */
+	display: block;
+	width: 400px;
+	position: relative;
+	top: 3px;
+	left: 150px;
+	height: 2px;
+	background: white;
+	box-shadow: 2px 2px 2px 0 #000;
+	content: '';
+}
+
+.ballcontainer {
+	width: 630px;
+	height: 150px;
+	margin-left: 30px;
+	margin-top: -30px;
+	overflow: hidden;
+}
+
+.ball0,
+.ball1,
+.ball2,
+.ball3,
+.ball4,
+.ball5 {
+	opacity: 0;
+	display: inline-block;
+	margin: 27px 0 0 20px;
+	text-align: center;
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	background: radial-gradient(circle closest-side, #faa, #800);
+	border-radius: 50%;
+	color: black;
+	text-shadow: 0 0 2px #333;
+	font-size: 24px;
+	content: "";
+	box-shadow: 2px 2px 5px 0px #000, 0 0 10px 1px #444;
+}
+
+.addanimation {
+	animation: swish .6s linear forwards;
+}
+
+.ball1 {
+	animation-delay: .5s;
+	background: radial-gradient(circle closest-side, #8f8, #282);
+}
+
+.ball2 {
+	animation-delay: 1s;
+	background: radial-gradient(circle closest-side, #ff8, #880);
+}
+
+.ball3 {
+	animation-delay: 1.5s;
+	background: radial-gradient(circle closest-side, #aaf, #44c);
+}
+
+.ball4 {
+	animation-delay: 2s;
+	background: radial-gradient(circle closest-side, #daf, #80f);
+}
+
+.ball5 {
+	animation-delay: 2.5s;
+	background: radial-gradient(circle closest-side, #F4A460, #841);
+}
+
+.ball0:after,
+.ball1:after,
+.ball2:after,
+.ball3:after,
+.ball4:after,
+.ball5:after {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 40px;
+	height: 40px;
+	background: white;
+	display: block;
+	border-radius: 50%;
+	content: '';
+	color: black;
+	mix-blend-mode: overlay;
+	text-shadow: 0 0 2px #333;
+	font-size: 24px;
+}
+
+@keyframes swish {
+	0% {
+		opacity: 0;
+		transform: translateX(300px) rotateZ(360deg);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0) rotateZ(0deg);
+	}
+}
+
+button {
+	display: none;
+	border-radius: 10px;
+	box-shadow: 0px 0px 15px 0px #000;
+	border: 1px outset #666;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: black;
+	font-size: 30px;
+	text-shadow: 0 0 1px #000;
+}
+
+.glow {
+	position: absolute;
+	background: white;
+	font-size: 15px;
+	top: 85%;
+	left: 50%;
+	width: 76px;
+	height: 40px;
+	margin-left: -38px;
+	margin-top: -20px;
+	text-align: center;
+	animation: glow 1s linear infinite;
+	box-shadow: 0px 0px 15px 0px #000;
+}
+
+.glow:hover {
+	cursor: pointer;
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	width: 76px;
+	height: 40px;
+	margin-left: -38px;
+	margin-top: -20px;
+	text-shadow: 0 0 1px #fff;
+	animation: glow1 .2s linear infinite;
+}
+
+@keyframes glow {
+	0% {
+		background: #000;
+		color: #000;
+	}
+
+	75% {
+		background: #fff;
+		color: #444;
+	}
+
+	100% {
+		background: #000;
+		color: #000;
+	}
+}
+
+@keyframes glow1 {
+	0% {
+		background: #000;
+		color: white;
+	}
+
+	50% {
+		background: #fff;
+		color: white;
+	}
+
+	100% {
+		background: #000;
+		color: white;
+	}
+}
+
+.goodluck {
+	display: none;
+	position: absolute;
+	bottom: 15px;
+	text-align: center;
+	color: white;
+	width: 100%;
+	font-size: 50px;
+	font-weight: bold;
+	text-shadow: 2px 2px 2px #000;
+	animation: good .3s infinite;
+}
+
+@keyframes good {
+	0% {
+		text-shadow: 0 0 0 transparent;
+	}
+
+	50% {
+		text-shadow: 0 0 40px #fff;
+	}
+}
