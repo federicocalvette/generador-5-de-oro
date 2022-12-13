@@ -4,7 +4,7 @@ Proyecto para practicar Javascript, basado en el juego de azar 5 de Oro.
 
 ## Web view
 ### Request 
-<img src="./img/5deoro1.png" alt="Hero"/>
+<img src="./img/5deoro1.png" alt="Request"/>
 
 ### Result
-<img src="./img/5deororesult.png" alt="RequestSection"/>
+<img src="./img/5deororesult.png" alt="Response"/>
